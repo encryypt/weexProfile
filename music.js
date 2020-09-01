@@ -6,10 +6,10 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://profilewex.glitch.me/`); // ⁄œÌ· „Â„ Õÿ «”„ «·„‘—Ê⁄
+  http.get(`http://profilewex.glitch.me/`); 
 }, 280000);
 
-//ﬂ· «·»ﬂÃ« 
+
 const Discord = require("discord.js");
 const converter = require("number-to-words");
 const moment = require("moment");
@@ -60,7 +60,7 @@ client.on('message', async message => {
       });
     }
   }
-});/* ???????? ?????? ??? ?? ???   ???????? ???? ??? ????? ????? ?? ??????? */
+});
 
 const credits = require('./credits.json');
 const cool = [];
@@ -102,7 +102,7 @@ client.on('message', async message => {
             var number = `${one}${two}${three}${four}`;
 
             message.channel.send(`**${message.author.username}, Amount :\`$${balance}\`
-- :pencil2: | \`${number}\`, √ﬂ » «·—ﬁ„ ··√” „—«—
+- :pencil2: | \`${number}\`, 
 **`).then(m => {
                 message.channel.awaitMessages(m => m.author.id === message.author.id, { max: 1, time: 60000 }).then(c => {
                     if (c.first().content === number) {
@@ -154,7 +154,7 @@ var time = require("./time.json");
       });
     }
   }
-});/* «·Õ—«„ÌÂ  »‰”ŒÂ “ÌÌ „« ÂÊ«   ··„⁄Ê·„Â «⁄œÂ —›⁄ ⁄·‘«‰ «‰„”Õ „‰ «·”Ì—›— */
+});
 
 
 
@@ -260,12 +260,12 @@ if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "No Reps"
             let Image = Canvas.Image,
             canvas = new Canvas.createCanvas(307, 300),
             ctx = canvas.getContext('2d');
-            fs.readFile("Pic.jpg", function (err, Background) { //«„ œ«œ «·’Ê—…
+            fs.readFile("Pic.jpg", function (err, Background) { 
               if (err) return console.log(err);
             let BG = Canvas.Image;
             let ground = new Image;
             ground.src = Background;
-            ctx.drawImage(ground, 0, 0, 307, 300); // ÕÃ„ «·’Ê—…
+            ctx.drawImage(ground, 0, 0, 307, 300); 
  
 })
  
@@ -279,53 +279,53 @@ if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "No Reps"
                         if (err) return console.log(err);
  
                         //ur name
-                        ctx.font = 'bold 15px kathen'; // ÕÃ„ «·Œÿ Ê ‰Ê⁄Â
-                        ctx.fontSize = '15px'; // ⁄—÷ «·Œÿ
-                        ctx.fillStyle = "#000000"; // ·Ê‰ «·Œÿ
-                        ctx.textAlign = "center"; // „Õ«–« … «·‰’
-                        ctx.fillText(`${getvalueof.username}`, 153, 200) // «Õœ«ÀÌ«  «”„ﬂ
+                        ctx.font = 'bold 15px kathen'; 
+                        ctx.fontSize = '15px'; 
+                        ctx.fillStyle = "#000000"; 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${getvalueof.username}`, 153, 200) 
  
                         //ur name
-                        ctx.font = 'bold 15px kathen'; // ÕÃ„ «·Œÿ Ê ‰Ê⁄Â
-                        ctx.fontSize = '15px'; // ⁄—÷ «·Œÿ
-                        ctx.fillStyle = "#f1f1f1"; // ·Ê‰ «·Œÿ
-                        ctx.textAlign = "center"; // „Õ«–« … «·‰’
-                        ctx.fillText(`${getvalueof.username}`, 153, 200) // «Õœ«ÀÌ«  «”„ﬂ
+                        ctx.font = 'bold 15px kathen'; 
+                        ctx.fontSize = '15px'; 
+                        ctx.fillStyle = "#f1f1f1"; 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${getvalueof.username}`, 153, 200) 
  
                         //credit
-                        ctx.font = "bold 10px kathen" // ‰Ê⁄ «·Œÿ ÊÕÃ„Â
-                        ctx.fontSize = '10px'; // ⁄—÷ «·Œÿ
-                        ctx.fillStyle = "#f1f1f1" // ·Ê‰ «·Œÿ
-                        ctx.textAlign = "center"; // „Õ«–« … «·‰’
-                        ctx.fillText(`$${credits[mention.id].credits}`, 248 , 147) // «Õœ«ÀÌ«  «·„’«—Ì
+                        ctx.font = "bold 10px kathen"
+                        ctx.fontSize = '10px'; 
+                        ctx.fillStyle = "#f1f1f1" 
+                        ctx.textAlign = "center";
+                        ctx.fillText(`$${credits[mention.id].credits}`, 248 , 147) 
  
  
-                        ctx.font = "bold 10px kathen" // ‰Ê⁄ «·Œÿ ÊÕÃ„Â
-                        ctx.fontSize = '12px'; // ⁄—÷ «·Œÿ
-                        ctx.fillStyle = "#f1f1f1" // ·Ê‰ «·Œÿ
-                        ctx.textAlign = "center"; // „Õ«–« … «·‰’
-                        ctx.fillText(`${profile[mention.id].tite}`, 150,164) // «Õœ«ÀÌ«  «·„’«—Ì
+                        ctx.font = "bold 10px kathen" 
+                        ctx.fontSize = '12px'; 
+                        ctx.fillStyle = "#f1f1f1" 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${profile[mention.id].tite}`, 150,164)
  
                         //Level
-                        ctx.font = "bold 24px kathen" // ‰Ê⁄ «·Œÿ Ê ÕÃ„Â
-                        ctx.fontSize = '10px'; // ⁄—÷ «·Œÿ
-                        ctx.fillStyle = "#f1f1f1" // ·Ê‰ «·Œÿ
-                        ctx.textAlign = "center"; // „Õ«–« … «·‰’
-                        ctx.fillText(`${profile[getvalueof.id].level}`, 248, 95) // «Õœ«ÀÌ«  «··›·
+                        ctx.font = "bold 24px kathen" 
+                        ctx.fontSize = '10px'; 
+                        ctx.fillStyle = "#f1f1f1" 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${profile[getvalueof.id].level}`, 248, 95) 
  
                          //info
-                        ctx.font = "bold 12px kathen" // ‰
-                        ctx.fontSize = '15px'; // ⁄—÷ «·ŒÿÊ⁄ «·Œÿ ÊÕÃ„Â
-                        ctx.fillStyle = "#000000" // ·Ê‰ «·Œÿ
-                        ctx.textAlign = "center"; // „Õ«–« … «·‰’
-                        ctx.fillText(`${profile[getvalueof.id].points}/250`, 170, 270) // «Õœ«ÀÌ«  «·‰ﬁ«ÿ
+                        ctx.font = "bold 12px kathen" 
+                        ctx.fontSize = '15px'; 
+                        ctx.fillStyle = "#000000" 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${profile[getvalueof.id].points}/250`, 170, 270) 
  
                         //info
-                        ctx.font = "bold 12px kathen" // ‰
-                        ctx.fontSize = '15px'; // ⁄—÷ «·ŒÿÊ⁄ «·Œÿ ÊÕÃ„Â
-                        ctx.fillStyle = "#f1f1f1" // ·Ê‰ «·Œÿ
-                        ctx.textAlign = "center"; // „Õ«–« … «·‰’
-                        ctx.fillText(`${profile[getvalueof.id].points}/250`, 170, 270) // «Õœ«ÀÌ«  «·‰ﬁ«ÿ
+                        ctx.font = "bold 12px kathen" 
+                        ctx.fontSize = '15px'; 
+                        ctx.fillStyle = "#f1f1f1"
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${profile[getvalueof.id].points}/250`, 170, 270) 
  
                         // REP
                         ctx.font = "bold 20px  kathen";
